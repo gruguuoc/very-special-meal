@@ -13,18 +13,9 @@
     font-size: 16px;
     line-height: 24px;
     background-color: $uoc-bg;
-    color: $uoc-corporate;
+    color: $main-color;
 }
 
 .image{
     width: $img-regular-size;
-}
-
-.my-slider {
-    max-width: 800px; // Ajusta el ancho máximo del carrusel
-    margin: 0 auto; // Centra el carrusel
-
-    .slide{
-        color: red;
-    }
 }
