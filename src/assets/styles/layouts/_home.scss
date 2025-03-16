@@ -19,3 +19,12 @@
 .image{
     width: $img-regular-size;
 }
+
+.my-slider {
+    max-width: 800px; // Ajusta el ancho máximo del carrusel
+    margin: 0 auto; // Centra el carrusel
+
+    .slide{
+        color: red;
+    }
+}
