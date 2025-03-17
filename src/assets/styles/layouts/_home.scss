@@ -34,7 +34,7 @@
     background-color: $list-bg;
 }
 
-.unorderder-list{
+.unordered-list{
     list-style: none;
     padding: 0;
     text-align: center;
@@ -66,6 +66,11 @@
         font-size: 2.5rem;
     }
 
+    &--small { 
+        text-align: justify;
+        font-size: 1rem;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -76,4 +81,11 @@
         background: url('../images/brush_stroke.svg') no-repeat center;
         z-index: -1; 
     } 
+  }
+
+  .faq-item{
+    &__answer{
+        border-left: 3px solid $main-red;
+        padding-left: 10px;
+    }
   }
