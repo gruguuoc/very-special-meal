@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .my-slider {
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 
     &__content{
@@ -13,8 +13,8 @@
     }
 
     &__image{
-        width: 30%;
-        border-radius: 10px;
+        width: 100%;
+        border-radius: $border-radius;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         margin: 1% 0;
     }
