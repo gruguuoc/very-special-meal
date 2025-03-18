@@ -1,0 +1,41 @@
+/*------------------------------------*\
+  #CUSTOM ELEMENTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #CARD
+\*------------------------------------*/
+.card{
+    border: 2px solid $main-color;
+    border-radius: $border-radius;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: $list-bg;
+}
+
+/*------------------------------------*\
+  #FAQ ELEMENT
+\*------------------------------------*/
+.faq{
+  grid-area: faq;
+  .faq-item{
+    &__answer{
+        border-left: 3px solid $main-red;
+        padding-left: 10px;
+    }
+  }
+}
+
+/*------------------------------------*\
+  #WELCOME SECTION
+\*------------------------------------*/
+.welcome{
+  grid-area: welcome;
+}
+
+/*------------------------------------*\
+  #RECIPE SECTION
+\*------------------------------------*/
+.recipe{
+  grid-area: recipe;
+}

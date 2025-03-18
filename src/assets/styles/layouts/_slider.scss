@@ -5,6 +5,7 @@
 .my-slider {
     width: 100%;
     margin: 0 auto;
+    grid-area: slider;
 
     &__content{
         display: flex;
@@ -25,5 +26,15 @@
         color: #222;
         text-transform: uppercase;
         letter-spacing: 1px;
+    }
+}
+
+@media(min-width: $desktop-mq){
+    .my-slider {
+        max-width: 50vw;
+
+        &__image{
+            width: 70%;
+        }
     }
 }
