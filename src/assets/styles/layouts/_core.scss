@@ -20,7 +20,7 @@
     font-family: $font-family-sans-serif;
     font-size: 16px;
     line-height: 24px;
-    background-color: $uoc-bg;
+    background-color: $app-bg;
     color: $main-color;
     list-style: none;
     text-align: justify;
@@ -38,6 +38,10 @@
     grid-area: headeringredients;
 }
 
+.header-welcome{
+  grid-area: headerwelcome;
+}
+
 /*------------------------------------*\
   #IMAGE
 \*------------------------------------*/
@@ -45,15 +49,53 @@
     width: $img-regular-size;
 }
 
+.image-welcome{
+  grid-area: imagewelcome;
+}
+
+.footer{
+  text-align: center;
+  grid-area: footer;
+  padding: 25px;
+}
+
+/*------------------------------------*\
+  #TABLET-DESKTOP LAYOUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #TABLET
+\*------------------------------------*/
+@media(min-width: $tablet-mq){
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "header header"
+          "headerwelcome headeringredients"
+          "welcome presentation"
+          "imagewelcome slider"
+          "recipe recipe"
+          "faq faq"
+          "footer footer";
+        gap: 16px;
+    }
+}
+
+/*------------------------------------*\
+  #DESKTOP
+\*------------------------------------*/
 @media(min-width: $desktop-mq){
     .body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
           "header header"
-          ". headeringredients"
-          "welcome slider"
-          "recipe faq";
+          "headerwelcome headeringredients"
+          "welcome presentation"
+          "imagewelcome slider"
+          "recipe faq"
+          "footer footer";
         gap: 16px;
     }
 }

@@ -1,3 +1,5 @@
+@import "functions";
+
 /*------------------------------------*\
   #SLIDER
 \*------------------------------------*/
@@ -16,7 +18,7 @@
     &__image{
         width: 100%;
         border-radius: $border-radius;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: createShadow('medium');
         margin: 1% 0;
     }
 
@@ -29,6 +31,26 @@
     }
 }
 
+/*------------------------------------*\
+  #TABLET-DESKTOP LAYOUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #TABLET
+\*------------------------------------*/
+@media(min-width: $tablet-mq){
+    .my-slider {
+        max-width: 50vw;
+
+        &__image{
+            width: 70%;
+        }
+    }
+}
+
+/*------------------------------------*\
+  #DESKTOP
+\*------------------------------------*/
 @media(min-width: $desktop-mq){
     .my-slider {
         max-width: 50vw;

@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #FUNCTIONS
+\*------------------------------------*/
+
+/*
+* Create a shadow effect for an element based on the intensity
+* @param {string} $intensity - The intensity of the shadow
+*/
+@function createShadow($intensity){
+    $alpha: 0;
+
+    @if $intensity == 'low' {
+        $alpha: 0;
+    } @else if $intensity == 'medium' {
+        $alpha: 0.5;
+    } @else if $intensity == 'high' {
+        $alpha: 1;
+    } @else {
+        @error "Invalid error. Use low, medium or high";
+    }
+
+    @return 0px 4px 10px rgba(0, 0, 0, $alpha);
+}

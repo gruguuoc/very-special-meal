@@ -18,12 +18,13 @@ $main-green:#B5C18E;
 $main-red: #ff2a00;
 
 $list-bg: color.scale($main-green, $lightness: 75%);
-$uoc-bg: color.scale($secondary-color, $lightness: 50%);
+$app-bg: color.scale($secondary-color, $lightness: 50%);
 
 /*------------------------------------*\
   #SIZES
 \*------------------------------------*/
 $img-regular-size: 100%;
-$mqMinWidth: 420px;
 $border-radius: 10px;
+
 $desktop-mq: 1024px;
+$tablet-mq: 768px;
