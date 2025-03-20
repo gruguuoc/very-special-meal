@@ -8,18 +8,18 @@
 
     &--large { 
         color: $main-red;
-        font-size: 8rem;
+        font-size: $title-large;
         letter-spacing: 2px;
         text-shadow: 3px 3px 0px black; 
     }
   
     &--regular { 
-        font-size: 2.5rem;
+        font-size: $title-regular;
     }
 
     &--small { 
         text-align: justify;
-        font-size: 1rem;
+        font-size: $title-small;
     }
 
     &::before {
@@ -32,4 +32,26 @@
         background: url('../images/brush_stroke.svg') no-repeat center;
         z-index: -1; 
     } 
-  }
+}
+
+/*------------------------------------*\
+  #TABLET
+\*------------------------------------*/
+@media(min-width: $tablet-mq){
+    .title {  
+        &--large { 
+            font-size: $title-large-tablet-desktop;
+        }
+    }
+}
+
+/*------------------------------------*\
+  #DESKTOP
+\*------------------------------------*/
+@media(min-width: $desktop-mq){
+    .title {  
+        &--large { 
+            font-size: $title-large-tablet-desktop;
+        }
+    }
+}
