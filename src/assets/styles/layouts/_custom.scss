@@ -19,11 +19,12 @@
 .faq{
   grid-area: faq;
   align-self: start;
-  .faq-item{
-    &__answer{
-        border-left: 3px solid $main-red;
-        padding-left: 10px;
-    }
+}
+
+.faq-item{
+  &__answer{
+      border-left: 3px solid $main-red;
+      padding-left: 10px;
   }
 }
 
