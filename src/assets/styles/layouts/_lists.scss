@@ -4,7 +4,7 @@
 
 .unordered-list{
     list-style: none;
-    padding: 0;
+    padding: $spacing-none;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     &__counter{
         font-family: $font-family-stick;
         font-size: 30px;
-        margin: 0;
-        margin-bottom: 20px;
+        margin: $spacing-none;
+        margin-bottom: $spacing-medium;
     }
 }

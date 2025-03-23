@@ -5,7 +5,7 @@
 \*------------------------------------*/
 
 .my-slider {
-    width: 100%;
+    width: $full-width;
     margin: 0 auto;
     grid-area: slider;
 
@@ -16,8 +16,8 @@
     }
 
     &__image{
-        width: 100%;
-        border-radius: $border-radius;
+        width: $full-width;
+        border-radius: $border-radius-small;
         box-shadow: createShadow('medium');
         margin: 1% 0;
     }

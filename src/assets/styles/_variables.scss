@@ -20,16 +20,38 @@ $main-red: #ff2a00;
 $list-bg: color.scale($main-green, $lightness: 75%);
 $app-bg: color.scale($secondary-color, $lightness: 50%);
 
+$black-transparent: rgba(0, 0, 0, 0.2);
+
 /*------------------------------------*\
   #SIZES
 \*------------------------------------*/
-$img-regular-size: 100%;
-$border-radius: 10px;
 
+//Font sizes
+$font-size-large: 24px;
+$font-size-medium: 20px;
+$font-size-little: 16px;
+
+//Media queries
 $desktop-mq: 1024px;
 $tablet-mq: 768px;
 
+//Title sizes
 $title-large: 6rem;
 $title-large-tablet-desktop: 8rem;
 $title-regular: 2rem;
 $title-small: 1rem;
+
+//Grid-Flex
+$grid-column-default: 1fr;
+$gap-default: 16px;
+
+//Pading-margin
+$spacing-medium: 20px;
+$spacing-none: 0;
+$padding-small: 10px;
+
+//Others
+$img-regular-size: 100%;
+$border-radius-small: 10px;
+$full-width: 100%;
+$line-height-default: 24px;
